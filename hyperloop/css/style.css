@@ -906,7 +906,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .social-links a:hover {
-  background: #2dc997;
+  background: #E87722;
   color: #fff;
 }
 
@@ -949,15 +949,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #2dc997;
+  background-image: linear-gradient(to right, #C64600 0%, #E87722 51%, #C64600 100%);
   border: 0;
+  border-radius: 25px;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #51d8ad;
+  background-position: right center;
+  opacity: 0.5;
 }
 
 /*--------------------------------------------------------------
@@ -980,3 +982,4 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ccc;
 }
+

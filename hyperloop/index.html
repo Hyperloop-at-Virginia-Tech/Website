@@ -298,13 +298,26 @@
     </section><!-- #team -->
 
     <!--==========================
-      Contact Section
+    ] Future Goals Section
     ============================-->
+
     <section id="contact">
+
+        <div class="container wow fadeInUp">
+            <div class="section-header">
+              <h3 class="section-title">Future Goals</h3>
+              <p class="cta-text">Hyperloop at Virginia Tech is always looking for new members. If you are interested in getting involved, please follow this link to fill out our new member application.</p>
+            </div>
+          </div>
+
+    <!--
+      Contact Us Code
+    -->
+
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">CONTACT US</h3>
-          <p class="section-description">We are always looking for sponsors and corporate partners. Please reach out to us if you are interested</p>
+          <p class="section-description">Join the hype by contacting us through the form below or at hyperloopatvirginiatech@gmail.com</p>
         </div>
       </div>
 
@@ -317,53 +330,54 @@
 
             <div class="info">
               <div>
-                <i class="fa fa-map-marker"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <i class="fa fa-map-marker" style="color:#E87722"></i>
+                <p>619 Whittemore Hall<br>Blacksburg, VA 24061</p>
               </div>
 
               <div>
-                <i class="fa fa-envelope"></i>
-                <p>info@example.com</p>
+                <i class="fa fa-envelope" style="color:#E87722"></i>
+                <p>hyperloopatvirginiatech@gmail.com</p>
               </div>
 
               <div>
-                <i class="fa fa-phone"></i>
+                <i class="fa fa-phone" style="color:#E87722";></i>
                 <p>+1 5589 55488 55s</p>
               </div>
             </div>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://twitter.com/vthyperloop?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/VTHyperloop/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/vthyperloop/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/vthyperloop/about/" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
 
           </div>
 
+<!-- Need to figure out how to get the "Send Message" button to automatically send the email-->
+
           <div class="col-lg-5 col-md-8">
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <div id="errormessage">Your message could not be sent.</div>
+              <form action="mailto:hyperloopatvirginiatech@gmail.com" enctype="text/plain" method="POST">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
+                  <div class="validation">Name could not be sent.</div>
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
+                  <div class="validation">Email could not be sent.</div>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
+                  <div class="validation">Subject could not be sent.</div>
                 </div>
                 <div class="form-group">
                   <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
+                  <div class="validation">Message could not be sent</div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"><button type="submit">Send Message</button>
               </form>
             </div>
           </div>
