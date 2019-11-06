@@ -493,7 +493,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-/* About Us Section
+/* About Hyperloop
 --------------------------------*/
 #about {
   background: #fff;
@@ -573,10 +573,91 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
+/* About Us Section
+--------------------------------*/
+#team {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+#team .team-container .background {
+  min-height: 300px;
+  background: url(../img/OldTeam.png) center bottom no-repeat;
+  background-size: 750px;
+  margin-bottom: 10px;
+}
+
+#team .team-container .content {
+  background: #fff;
+}
+
+#team .team-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #team .team-container .title {
+    padding-top: 15px;
+  }
+}
+
+#team .team-container p {
+  line-height: 26px;
+}
+
+#team .team-container p:last-child {
+  margin-bottom: 0;
+}
+
+#team .team-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#team .team-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #E87722;
+}
+
+#team .team-container .icon-box .icon i {
+  color: #E87722;
+  font-size: 24px;
+}
+
+#team .team-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#team .team-container .icon-box .title a {
+  color: #111;
+}
+
+#team .team-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  background: #fff;
   padding: 80px 0 60px 0;
 }
 
@@ -806,7 +887,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
+  background: #f7f7f7;
   padding: 80px 0 60px 0;
 }
 
