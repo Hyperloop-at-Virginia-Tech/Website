@@ -34,6 +34,13 @@
 
 <body>
 
+  <script type="text/javascript">
+    var clientId = '252612576340-ehs3631gu7n25odjel5fels8gn7flu69.apps.googleusercontent.com';
+    var apiKey = 'AIzaSyBKS5o41c3uOD7VpMQEvwvdeL1hfxr1lIU';
+    var scopes =
+    'https://www.googleapis.com/auth/gmail.readonly '+
+    'https://www.googleapis.com/auth/gmail.send';
+  </script>
   <!--==========================
   Header
   ============================-->
@@ -278,13 +285,14 @@
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage">Your message could not be sent.</div>
-              <form action="mailto:hyperloopatvirginiatech@gmail.com" enctype="text/plain" method="POST">
+              <!--form action="mailto:hyperloopatvirginiatech@gmail.com" enctype="text/plain" method="POST"-->
+              <form action="https://formspree.io/hyperloopatvirginiatech@gmail.com" method="POST">  
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validation">Name could not be sent.</div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
                   <div class="validation">Email could not be sent.</div>
                 </div>
                 <div class="form-group">
@@ -295,7 +303,10 @@
                   <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validation">Message could not be sent</div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button>
+                <div class="hero-container">
+                    <a href="#contact" onclick="$(this).closest('form').submit()">Submit Link</a>
+                    
+                    <!--button type="submit">Send Message</button-->
               </form>
             </div>
           </div>
