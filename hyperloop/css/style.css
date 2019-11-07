@@ -588,7 +588,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .team-container .content {
-  background: #fff;
+  background: #f7f7f7;
 }
 
 #team .team-container .title {
@@ -612,7 +612,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .team-container .icon-box {
-  background: #fff;
+  background: #f7f7f7;
   background-size: cover;
   padding: 0 0 30px 0;
 }
